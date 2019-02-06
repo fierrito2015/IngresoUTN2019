@@ -18,25 +18,49 @@ function sumar()
 
 function restar()
 {
-    var numero3;
-    var numero4;
+    var numero1;
+    var numero2;
     var resta;
-    numero3 = document.getElementById("numeroUno").value;
-    numero4 = document.getElementById("numeroDos").value;
-    numero3 = parseInt(numero3);
-    numero4 = parseInt(numero4);
-    resta = numero3 - numero4;
+    numero1 = document.getElementById("numeroUno").value;
+    numero2 = document.getElementById("numeroDos").value;
+    numero1 = parseInt(numero1);
+    numero2 = parseInt(numero2);
+    resta = numero1 - numero2;
     alert ("la resta es " + resta);
 
 }
 
 function multiplicar()
 { 
+    var numero1;
+    var numero2;
+    var multi;
+    numero1 = document.getElementById("numeroUno").value;
+    numero2 = document.getElementById("numeroDos").value;
+    numero1 = parseInt(numero1);
+    numero2 = parseInt(numero2);
+    multi = numero1 * numero2;
+    alert ("la multiplicacion es " + multi);
 	
 }
 
 function dividir()
 {
-	
+    var numero1;
+    var numero2;
+    var div;
+    numero1 = document.getElementById("numeroUno").value;
+    numero2 = document.getElementById("numeroDos").value;
+    numero1 = parseInt(numero1);
+    numero2 = parseInt(numero2);
+    if (numero2 != 0)
+    {
+        div = numero1 / numero2;
+        alert ("la division es " + div);
+    }
+    else
+    {
+        alert("no se puede dividir por 0");
+    }
 }
 
