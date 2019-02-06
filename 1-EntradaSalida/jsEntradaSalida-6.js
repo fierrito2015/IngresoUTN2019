@@ -6,12 +6,13 @@ function sumar()
     var numero1;
     var numero2;
     var suma;
-    numero1 = document.getElementById("numeroUno").Value;
-    numero2 = document.getElementById("numeroDos").Value;
-    numero1 = parseint(numero1);
-    numero2 = parseint(numero2);
+    numero1 = document.getElementById("numeroUno").value;
+    numero2 = document.getElementById("numeroDos").value;
+    numero1 = parseInt(numero1);
+    numero2 = parseInt(numero2);
     suma = numero1 + numero2;
-    alert(suma);
+    alert("el numero es " +suma);
+    
 
 }
 
