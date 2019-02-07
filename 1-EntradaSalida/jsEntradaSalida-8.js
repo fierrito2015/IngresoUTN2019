@@ -9,8 +9,8 @@ function SacarResto()
     var resto;
     numero1 = document.getElementById("numeroDividendo").value;
     numero2 = document.getElementById("numeroDivisor").value;
-    numero1 = parseInt(numero1);
-    numero2 = parseInt(numero2);
+    
+    
     if (numero2 != 0)
     {
         resto = numero1 % numero2;

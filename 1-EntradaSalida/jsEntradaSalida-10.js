@@ -6,10 +6,14 @@ function MostrarDescuento()
 {
  var importe;
  var resultado;
+ var descuento;
  importe = document.getElementById("importe").value;
  importe = parseInt(importe);
- resultado = importe - (25 * importe / 100);
+ descuento= 25*importe/100;
+ resultado = importe - descuento;
+ 
  document.getElementById("resultado").value = resultado;
+ alert("el descuento es de "+descuento);
 
 
 }

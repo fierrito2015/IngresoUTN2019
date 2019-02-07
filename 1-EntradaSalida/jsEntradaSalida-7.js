@@ -23,8 +23,7 @@ function restar()
     var resta;
     numero1 = document.getElementById("numeroUno").value;
     numero2 = document.getElementById("numeroDos").value;
-    numero1 = parseInt(numero1);
-    numero2 = parseInt(numero2);
+    
     resta = numero1 - numero2;
     alert ("la resta es " + resta);
 
@@ -37,8 +36,8 @@ function multiplicar()
     var multi;
     numero1 = document.getElementById("numeroUno").value;
     numero2 = document.getElementById("numeroDos").value;
-    numero1 = parseInt(numero1);
-    numero2 = parseInt(numero2);
+    
+    
     multi = numero1 * numero2;
     alert ("la multiplicacion es " + multi);
 	
@@ -51,8 +50,8 @@ function dividir()
     var div;
     numero1 = document.getElementById("numeroUno").value;
     numero2 = document.getElementById("numeroDos").value;
-    numero1 = parseInt(numero1);
-    numero2 = parseInt(numero2);
+    
+    
     if (numero2 != 0)
     {
         div = numero1 / numero2;
