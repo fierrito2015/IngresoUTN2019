@@ -7,7 +7,10 @@ function Mostrar()
     {
         alert("niña bonita");
     }
-    
+    else
+    {
+        alert("ingrese otra edad");
+    }
 
 
 
