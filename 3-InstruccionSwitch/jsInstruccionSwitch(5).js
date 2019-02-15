@@ -1,7 +1,12 @@
 function Mostrar()
 {
 //tomo la hora 
-var laHora = document.getElementById('hora').value;
+var hora
+hora = parseInt(document.getElementById("hora").value);
+switch(hora)
+{
+    case 
+}
 
 //alert (laHora);
 	
