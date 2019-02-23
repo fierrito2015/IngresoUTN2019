@@ -4,21 +4,24 @@ function Mostrar()
 	var contador=0;
 	var positivo=0;
 	var negativo=1;
-	var numero1;
-	var numero2
+	var numero;
 	
 	var respuesta="si";
-	while (positivo>=0 && respuesta =="si")
+	while (respuesta =="si")
 	{
-		numero1 = parseInt(prompt("Ingrese un numero: "));
-		positivo = positivo + numero1;
-		respuesta = prompt("Desea seguir ingresando numeros?").toLowerCase();
-	}
-	while (negativo<1 && respuesta == "si")
-	{
-		numero2 = parseInt(prompt("Ingrese un numero: "));
-		negativo = negativo * numero2;
-		respuesta = prompt("Desea seguir ingresando numeros?").toLowerCase();
+		var numero = parseInt(prompt("Ingrese un Numero"));
+		if (numero >=0)
+		{
+			positivo=positivo + numero;
+			respuesta=prompt("Desea Ingresar Otro Numero?").toLowerCase();
+
+		}
+		else
+		{
+			negativo=negativo*numero;
+			respuesta= prompt("Desea Ingresar Otro Numero?").toLowerCase();
+
+		}
 
 	}
 
