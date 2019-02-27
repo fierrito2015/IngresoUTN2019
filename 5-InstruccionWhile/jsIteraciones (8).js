@@ -6,22 +6,30 @@ function Mostrar()
 	var negativo=1;
 	var numero;
 	
-	var respuesta="si";
-	while (respuesta =="si")
+	var respuesta=true;
+	while (respuesta ==true)
 	{
-		var numero = parseInt(prompt("Ingrese un Numero"));
+		numero = parseInt(prompt("Ingrese un Numero"));
+		while (isNaN(numero))
+		{
+			alert("ERROR, eso no es un Numero");
+			numero = parseInt(prompt("Ingrese un Numero"));
+		}
 		if (numero >=0)
 		{
 			positivo=positivo + numero;
-			respuesta=prompt("Desea Ingresar Otro Numero?").toLowerCase();
+			
 
 		}
 		else
 		{
 			negativo=negativo*numero;
-			respuesta= prompt("Desea Ingresar Otro Numero?").toLowerCase();
+			
 
 		}
+
+			respuesta= confirm("Desea Ingresar Otro Numero?");
+
 
 	}
 

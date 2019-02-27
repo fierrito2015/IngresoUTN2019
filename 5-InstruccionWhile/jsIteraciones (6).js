@@ -8,6 +8,11 @@ function Mostrar()
 	 while (contador < 5)
 	 {
 		 numero = parseInt(prompt("Ingrese un Numero: "));
+		 while (isNaN(numero))
+		 {
+			 alert("Eso no es un Numero");
+			numero = parseInt(prompt("Ingrese un Numero: "));
+		 }
 		 acumulador = acumulador + numero;
 		 contador  = contador + 1;
 
